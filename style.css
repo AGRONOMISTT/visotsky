@@ -1,0 +1,235 @@
+/*====== RESET STYLE =======*/
+@import url("reset.css");
+
+/*==========================*/
+@font-face {
+    font-family: 'Got400';
+    src: url('fonts/Got400.ttf');
+}
+
+@font-face {
+    font-family: 'Got900';
+    src: url('fonts/Got700.ttf');
+}
+
+/*==========================*/
+body {
+    font-family: 'Got900', 'Got400', sans-serif;
+    font-weight: 300;
+    background: #E5E5E5;
+}
+
+/*==========================*/
+[class*="__container"] {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/*========== BUTTON =========*/
+.button {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(92.64deg, #FF5621 29.24%, #F21313 83.67%);
+    border-radius: 4px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s ease 0s;
+    line-height: 1.43;
+}
+
+.button:hover,
+.button:active {
+    background: #F3CE00;
+}
+
+@media (max-width: 991.98px) {
+    .button {
+        padding: 14px 20px;
+    }
+}
+
+/*--------------------*/
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+
+
+@media (max-width: 560px) {}
+
+/*============================*/
+.main__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+.content__title {
+    font-size: 24px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.content__text {
+    font-family: 'Got400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    margin-bottom: 15px;
+}
+
+.exit__text {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.text__weight {
+    font-size: 14px;
+    font-family: 'Got900';
+}
+
+.text__form {
+    text-align: initial;
+    font-family: 'Got400';
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.balance {
+    margin-bottom: 34px;
+}
+
+.content__main {
+    background: #FFFFFF;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 27px 51px 64px 66px;
+    text-align: center;
+}
+
+.main__content {
+    background: #EFEFEF;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
+
+.main__content::after {
+    content: "";
+    background: url(img/book.svg) 0 0 / 100% no-repeat;
+    width: 394px;
+    height: 337px;
+    position: absolute;
+    top: 46px;
+    left: -50px;
+}
+
+.main__text {
+    padding: 63px 20px;
+    font-size: 92px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+    mix-blend-mode: soft-light;
+    text-transform: uppercase;
+}
+
+.content-block__form {
+    display: grid;
+    justify-content: center;
+}
+
+.form-block__input {
+    border: 2px solid #F3CE00;
+    min-width: 320px;
+    padding: 18px 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {}
+
+/*--------------------*/
+
+@media (max-width: 876.98px) {
+    .main__container {
+        flex-direction: column;
+
+    }
+
+    .content__main {
+        background: #FFFFFF;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+
+    .content__title {
+        margin-bottom: 41px;
+    }
+
+    .main__content::after {
+
+        left: 25%;
+    }
+
+    .main__text {
+        justify-content: center;
+    }
+
+    .main__content {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media (max-width: 600.98px) {
+    .main__content::after {
+        left: 0px;
+    }
+
+    .exit__text {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 560px) {
+    .main__content::after {
+        max-width: 100%;
+    }
+
+    .form-block__input {
+        min-width: 180px;
+    }
+
+    .main__text {
+        padding: 32px 11px;
+        font-size: 62px;
+    }
+
+    .button {
+        font-size: 9px;
+    }
+}
